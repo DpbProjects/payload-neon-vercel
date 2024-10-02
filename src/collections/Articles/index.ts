@@ -1,5 +1,7 @@
 import { CollectionConfig } from 'payload';
 
+import { RichText } from '@/fields/RichText';
+
 export const Articles: CollectionConfig = {
   slug: 'articles',
   labels: {
@@ -53,12 +55,7 @@ export const Articles: CollectionConfig = {
     //   hasMany: true,
     //   required: true,
     // },
-    {
-      name: 'content',
-      type: 'richText',
-      label: 'Content',
-      required: true,
-    },
+    ...RichText('content', true),
     {
       name: 'excerpt',
       type: 'textarea',

@@ -143,6 +143,7 @@ export interface Article {
     };
     [k: string]: unknown;
   };
+  content_html?: string | null;
   excerpt: string;
   featuredImage?: number | Media | null;
   seoTitle?: string | null;
