@@ -1,19 +1,13 @@
 import Image from 'next/image'
 
+import LatestArticles from '@/components/LatestArticles'
+
 export default async function Page() {
-  const categories = [
-    'Technology',
-    'Health & Fitness',
-    'Business',
-    'Lifestyle',
-    'Travel',
-    'Food',
-    'Education',
-  ]
+  
 
   return (
     <main className=" text-black grid md:grid-cols-5">
-      <div className="w-full h-[28rem] relative col-span-5">
+      <div className="w-full h-[16rem] relative col-span-5">
         <Image
           src="/david-pisnoy-RiGGe25WUw4-unsplash.jpg"
           alt="A gentleman working on a laptop with a code editor."
@@ -21,21 +15,7 @@ export default async function Page() {
           layout="fill"
         />
       </div>
-      <div className="sticky top-0 p-5 w-full max-h-max">
-        <h2 className="text-xl font-bold mb-4">Categories</h2>
-        <ul className="space-y-2">
-          {categories.map((category, index) => (
-            <li key={index}>
-              <a
-                href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}
-                className="block px-3 py-2 rounded-md text-gray-700 hover:bg-slate-100 hover:text-black transition-colors duration-300"
-              >
-                {category}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <LatestArticles />
       <div className=" p-6 col-start-2 col-end-5 mx-2">
         {/* Blog Headline */}
         <h1 className="text-5xl font-bold text-gray-900 mb-4">The Future of Web Development</h1>

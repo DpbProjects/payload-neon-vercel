@@ -4,7 +4,7 @@ import './global.css'
 
 import Link from 'next/link'
 
-import Header from '@/components/header'
+import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
