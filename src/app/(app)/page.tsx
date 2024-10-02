@@ -1,13 +1,7 @@
-import { Logos } from '@/components/Logos'
-import { Links } from '@/components/Links'
-import { Background } from '@/components/Background'
+import PageTemplate from './[slug]/page'
 
-export default function Home() {
-  return (
-    <main>
-      <Logos />
-      <Links />
-      <Background />
-    </main>
-  )
-}
+export default PageTemplate
+
+// 1). Create dynamic index template
+// 2)
+// 3)
