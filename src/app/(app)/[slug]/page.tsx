@@ -3,8 +3,6 @@ import Image from 'next/image'
 import LatestArticles from '@/components/LatestArticles'
 
 export default async function Page() {
-  
-
   return (
     <main className=" text-black grid md:grid-cols-5">
       <div className="w-full h-[16rem] relative col-span-5">
