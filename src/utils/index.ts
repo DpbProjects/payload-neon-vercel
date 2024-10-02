@@ -24,3 +24,14 @@ export const formatSlug =
 export const appendHtml = (str: string) => {
   return str + '_html'
 }
+
+export const extractArticleId = (href: string): string | number => {
+  const parts = href.split('-')
+  const id = parts.pop()
+
+  if (!id) {
+    throw new Error('Invalid href format. Could not extract article ID.')
+  }
+
+  return id
+}

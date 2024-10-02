@@ -11,7 +11,7 @@ export default async function LatestArticles() {
       <ul className="space-y-2">
         {allArticles.map((article, index) => (
           <Link
-            href={`/article/${article.slug}`}
+            href={`/article/${article.slug}-${article.id}`}
             key={index}
             className="block px-3 py-2 rounded-md text-gray-700 hover:bg-slate-100 hover:text-black transition-colors duration-300"
           >
